@@ -7,5 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.create(username:"Sherry", password:"password")
-User.create(username:"Sherry1", password:"password")
-User.create(username:"Sherry2", password:"password")
+User.create(username:"Shanzay", password:"password")
+User.create(username:"Zainab", password:"password")
+User.create(username:"Bakr", password:"password")
+Message.create(body:"I am a new user, name is Sherry", user_id: User.find(1).id)
+Message.create(body:"Hey Sherry, I'm Shanzay", user_id: User.find(2).id)
+Message.create(body:"I have herpes", user_id: User.find(3).id)
+Message.create(body:"My dad went out to get milk 2 days ago", user_id: User.find(4).id)
